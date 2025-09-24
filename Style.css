@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body,#main{
+    height: 100vh;
+    width: 100vw;
+
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#main{
+    height: 100%;
+    width: 100%; 
+  
+}
+    #bord{
+        background: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+    }
+    #bord #text{
+        font-size: 20vw;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.01);
+       color: #fff;
+        position: relative;
+        background: radial-gradient( 
+            circle at var(--x,50%) var(--y,50%),
+        rgb(91, 251, 216),
+        rgba(255,255,255,0.005) 120px 100px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.1s;
+        cursor:  none;
+      
+    }
+    
+    #blank{
+        height: 100%;
+        width: 100%;
+    }
+
+    .welcome{
+        height: 100%;
+        width: 100%;
+        background: transparent;
+          display: flex;
+         align-items: center;
+         justify-content: center;
+
+    }
+    .card {
+    height: 80%;
+    width: 85%;
+    background: rgba(255, 255, 255, 0.01);  
+    backdrop-filter: blur(5px);            
+    -webkit-backdrop-filter: blur(5px);  
+    border-radius: 20px;                   
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3); 
+    color: #fff;                            
+    padding: 20px;                       
+    overflow-x: hidden ;
+    display: flex;
+    align-items: center;
+}
+.name{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card h1{
+    font-size: 6vw;
+    font-style: bold;
+    font-family: sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display:block;
+    align-items: center;
+    justify-content: center;
+}
+.card .content{
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .text{
+    height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.content .text p{
+    font-size: 20px;
+    line-height: 2.5;
+}
+strong:hover{
+    color: red;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    background: #ff8706;
+    border-radius: 10px;
+    position: relative;
+    right: -2px;
+
+}
+.about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .card2 {
+    height: 80%;
+    width: 85%;
+    background: rgba(255, 255, 255, 0.01);  
+    backdrop-filter: blur(5px);          
+    -webkit-backdrop-filter: blur(5px);    
+    border-radius: 20px;                   
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3); 
+    color: #fff;                           
+    padding: 20px;                        
+    overflow-x: hidden ;
+}
+.card2 h1{
+    font-size: 2.5vw;
+}
+.card2 .description{
+    max-width: 50%;
+    height: auto;
+}
+
+.card2 .description p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.media{
+    height: 60px;
+    width: 35%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.media .icon{
+    height: 100%;
+    width: 60px;
+    background: red;
+    opacity: 10%;
+    border-radius: 30px;
+}
+.card3{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .card3 .skills{
+    height: 80%;
+    width: 85%;
+    background: rgba(255, 255, 255, 0.01);  
+    backdrop-filter: blur(5px);          
+    -webkit-backdrop-filter: blur(5px);    
+    border-radius: 20px;                   
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3); 
+    color: #fff;                           
+    padding: 20px;                        
+    overflow-x: hidden ;
+}
+.textholder{
+   height: 50%;
+   width: 100%;
+}
+.cardholder{
+   height: 50%;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   gap: 3px;
+   background: #000;
+}
+.scard{
+  height: 100%;
+  width: 100%;
+  background: gray;
+}
